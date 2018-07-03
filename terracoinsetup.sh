@@ -1,20 +1,20 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='stonecoin.conf'
-CONFIGFOLDER='/root/.stonecrypto'
-CONFIGFOLDERONLY='.stonecrypto'
-COIN_DAEMON='stonecoind'
-COIN_CLI='stonecoin-cli'
-COIN_TX='stonecoin-tx'
+CONFIG_FILE='terracoin.conf'
+CONFIGFOLDER='/root/.terracoin'
+CONFIGFOLDERONLY='.terracoin'
+COIN_DAEMON='terracoind'
+COIN_CLI='terracoin-cli'
+COIN_TX='terracoin-tx'
 COIN_PATH='/usr/local/bin/'
-COIN_REPO='https://github.com/stonecoinproject/stonecoin'
-COIN_TGZ='https://github.com/stonecoinproject/Stonecoin/releases/download/v2.0.0.0-beta1/stonecoin--linux64.tar.gz'
+COIN_REPO='https://github.com/terracoin/terracoin'
+COIN_TGZ='https://terracoin.io/bin/terracoin-core-0.12.1.8/terracoin-0.12.1-x86_64-linux-gnu.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 SENTINEL_REPO='N/A'
-COIN_NAME='Stonecoin'
-COIN_PORT=22323
-RPC_PORT=22324
+COIN_NAME='terracoin'
+COIN_PORT=13333
+RPC_PORT=13332
 
 NODEIP=$(curl -s4 icanhazip.com)
 

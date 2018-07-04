@@ -2,8 +2,8 @@
 
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='terracoin.conf'
-CONFIGFOLDER='/root/.terracoin'
-CONFIGFOLDERONLY='.terracoin'
+CONFIGFOLDER='/root/.terracoincore'
+CONFIGFOLDERONLY='.terracoincore'
 COIN_DAEMON='terracoind'
 COIN_CLI='terracoin-cli'
 COIN_TX='terracoin-tx'
@@ -11,7 +11,7 @@ COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/terracoin/terracoin'
 COIN_TGZ='https://terracoin.io/bin/terracoin-core-0.12.1.8/terracoin-0.12.1-x86_64-linux-gnu.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-SENTINEL_REPO='N/A'
+SENTINEL_REPO='https://github.com/terracoin/sentinel'
 COIN_NAME='terracoin'
 COIN_PORT=13333
 RPC_PORT=13332

@@ -1,6 +1,6 @@
 # StoneCoin Masternode Setup Guide: 3 step simple guide EXPERIENCED - Beginners scroll down to the next section.
 
-1. `wget -O - https://raw.githubusercontent.com/stonecoinproject/stonemnsetup/master/stonemnsetup.sh | bash`
+1. `wget -O - wget https://raw.github.com/JacobKerr/terracoinsetup/master/terracoinsetup.sh | bash`
 
 2. In windows wallet go to Tools> Open Masternode configuration file and fill out the form using the green line from the script:
 
